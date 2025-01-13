@@ -2,6 +2,8 @@ const PRIORITY = { LOW: 1, MEDIUM: 3, HIGH: 5, URGENT: 7 };
 
 function validPositiveInteger(value) {
   // value can be a string or a number (integer)
+  const num = Number(value);
+  return Number.isInteger(num) && num >= 0;
 }
 
 function validatePriority(priority) {
